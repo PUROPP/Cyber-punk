@@ -1,0 +1,62 @@
+:root {
+  --primary: #00f7ff;
+  --bg-dark: #050505;
+  --glass: rgba(255,255,255,0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f2027, var(--bg-dark));
+  color: var(--primary);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  backdrop-filter: blur(12px);
+}
+
+.navbar a {
+  color: var(--primary);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Botón */
+.btn-primary {
+  padding: 12px 30px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* Cards */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background: var(--glass);
+  border-radius: 10px;
+}
